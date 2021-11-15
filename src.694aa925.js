@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");const e=document.querySelector(".for-pokemons"),t=document.querySelector(".input");function n(e){return fetch(`https://pokeapi.co/api/v2/pokemon/${e}/`).then(e=>e.json())}function i({name:t,height:n,weight:i,abilities:s,sprites:a}){return e.innerHTML=`<div class="poket-card"><img src="${a.front_default}" alt="pokemon photo" class="poket-card__img">\n\n<h3 class="poket-card__name">Имя: ${t}</h3>\n\n<p class="poket-card__heigth">Рост: ${n} см</p>\n<p class="poket-card__weight">Вес: ${i}  кг</p>\n\n<ul class="poket-card__ability">ability:\n  <li class="poket-card__ability-li">${s[0].ability.name}</li>\n\n</ul>\n</div>`}t.addEventListener("submit",e=>{e.preventDefault(),n(t.elements.poketId.value).then(i),t.reset()});
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.694aa925.js.map
+//# sourceMappingURL=/pokemons/src.694aa925.js.map
