@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+}
+
+.exemple {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.main-H {
+  font-family: 'Praise', cursive;
+  font-size: 56px;
+}
+
+.withoutreset {
+  color: grey;
+  font-size: 14px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+
+  &__label {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  &__input {
+    border: 2px solid black;
+    width: 250px;
+    margin-bottom: 3px;
+
+    &::placeholder {
+      font-size: 13px;
+      padding: 2px;
+    }
+  }
+
+  &__btn {
+    padding-top: 2px;
+    background-color: rgb(187, 248, 126);
+    border: 2px solid black;
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 5px rgb(135, 252, 226);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
+
+.poket-card {
+  border: 2px solid black;
+  width: 250px;
+  height: 250px;
+  background-color: rgb(135, 252, 226);
+  padding-left: 20px;
+
+  &__img {
+    padding: 0 auto;
+    padding-bottom: 5px;
+  }
+
+  &__name {
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__heigth {
+    padding-bottom: 2px;
+  }
+
+  &__weight {
+    padding-bottom: 10px;
+  }
+
+  &__ability {
+    padding-left: 10px;
+    text-transform: uppercase;
+
+    &-li {
+      padding-left: 2px;
+      list-style: square;
+    }
+  }
+}
